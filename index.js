@@ -8,7 +8,7 @@ button.addEventListener('click', () => {
     const first = firstinput.value 
     const second = secondinput.value
     const third = thirdinput.value
-    
+
     if (second === "+") {
         result.innerHTML = Number(first) + Number(third)
     } else if (second === "-") {
@@ -17,6 +17,8 @@ button.addEventListener('click', () => {
         result.innerHTML = Number(first) * Number(third)
     } else if (second === "/") {
         result.innerHTML = Number(first) / Number(third)
+    } else if (second === "ИМС" || second === "имс") {
+        result.innerHTML = Number(first) / (Number(third) * Number(third))
     } else {
         result.innerHTML = "Нет такого действия"
     }

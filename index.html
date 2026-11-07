@@ -5,12 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="index.js" defer></script>
+    <style>
+
+       .inputs{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+       }
+       
+    </style>
 </head>
 <body>
     <div class="inputs">
         <div>
             <input id="firstinput" type="text">
             <p id="firstinputError"></p>
+        </div>
         <div>
             <input id="secondinput" type="text">
             <p id="secondinputError"></p>
@@ -21,7 +31,7 @@
         </div>
     </div>
 
-    <button id="button">рассчитать</button>
+    <button id="button">Рассчитать</button>
     <div class="resultcont">
         <p>Результат:</p>
         <p class="result"></p>
